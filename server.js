@@ -11,11 +11,13 @@ const indexRoute = require("./routes/index");
 const aboutRoute = require("./routes/about");
 const apiRoute = require("./routes/api");
 const workoutLogRoute = require("./routes/workout-log");
+const deleteWorkoutRoute = require("./routes/deleteWorkout");
 
 app.get("/", indexRoute);
 app.get("/about", aboutRoute);
-app.post("/api/message", apiRoute);
+app.post("/api/workout", apiRoute);
 app.get("/workout-log", workoutLogRoute);
+app.delete("/workout/:id", deleteWorkoutRoute);
 
 // Start the server
 app.listen(8080, () => {
