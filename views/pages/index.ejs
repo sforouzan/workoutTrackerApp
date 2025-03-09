@@ -7,11 +7,23 @@
 
 <body>
   <%- include('../partials/header') %>
-    <main>
-      <h1></h1>
+    <main id="homepage">
+      <h1>Workout Entry</h1>
       <%- include('../partials/components/exerciseForm') %>
+        <div id="confirmationMessage" class="success">
+          <div>
+            <h3>Your workout entry has been saved!</h3>
+            You can either <a href="/workout-log">view your log</a> or <a href="/">add another workout</a>.
+          </div>
+        </div>
+        <div id="errorMessage" class="error">
+          <div>
+            <h3>Sorry, there was an error saving the entry</h3>
+            Please <a href="/">try again</a>.
+          </div>
+        </div>
     </main>
-    <%- include('../partials/scripts') %>
+    <%- include('../partials/footer'); %>
 </body>
 
 </html>

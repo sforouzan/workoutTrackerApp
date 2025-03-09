@@ -11,15 +11,36 @@
     <%- include('../partials/header'); %>
   </header>
 
-  <main>
-    <div>
-      test
+  <main id="about">
+    <div class="container">
+      <h1 class="text-center">About Workout Tracker</h1>
+      <p class="lead text-center">Track your workouts and see them in a workout log.</p>
+
+      <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Features</h5>
+              <ul>
+                <li>Add Workout Name, Date, and Exercises</li>
+                <li>Add multiple exercises per workout</li>
+                <li>Log Exercise Name, Sets, Reps, Weight, and Distance</li>
+              </ul>
+              <h5 class="card-title mt-3">Technology Stack</h5>
+              <ul>
+                <li><strong>Frontend:</strong> Bootstrap 5</li>
+                <li><strong>Backend:</strong> Express & EJS</li>
+                <li><strong>Database:</strong> PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
-  <footer>
-    <%- include('../partials/footer'); %>
-  </footer>
+  <%- include('../partials/footer'); %>
+
 
 </body>
 
