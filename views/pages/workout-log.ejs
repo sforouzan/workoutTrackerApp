@@ -53,27 +53,26 @@
                         </tr>
                       </thead>
                       <% item.exercises.forEach(function(exercise) { %>
-                        <% console.log(exercise); %>
-                          <tbody>
-                            <tr>
-                              <td class="ps-3">
-                                <%= exercise.exercise_name %>
-                              </td>
-                              <td>
-                                <%= exercise.sets> 0 ? exercise.sets : "-" %>
-                              </td>
-                              <td>
-                                <%= exercise.reps> 0 ? exercise.reps : "-" %>
-                              </td>
-                              <td>
-                                <%= exercise.weight> 0 ? exercise.weight + " lbs." : "-" %>
-                              </td>
-                              <td>
-                                <%= exercise.distance> 0 ? exercise.distance + " km." : "-" %>
-                              </td>
-                            </tr>
-                          </tbody>
-                          <% }); %>
+                        <tbody>
+                          <tr>
+                            <td class="ps-3">
+                              <%= exercise.exercise_name %>
+                            </td>
+                            <td>
+                              <%= exercise.sets> 0 ? exercise.sets : "-" %>
+                            </td>
+                            <td>
+                              <%= exercise.reps> 0 ? exercise.reps : "-" %>
+                            </td>
+                            <td>
+                              <%= exercise.weight> 0 ? exercise.weight + " lbs." : "-" %>
+                            </td>
+                            <td>
+                              <%= exercise.distance> 0 ? exercise.distance + " km." : "-" %>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <% }); %>
                     </table>
                     <!-- Mobile responsive version of table using flex -->
                     <div class="d-flex flex-column d-md-none px-3">

@@ -6,7 +6,6 @@ module.exports = async (req, res) => {
     const result = await pool.query(
       "SELECT * FROM workout_sessions ORDER BY date DESC"
     );
-    console.log("result.rows", result.rows);
     // get exercises for each workout session
     for (const workoutSession of result.rows) {
       const exerciseResult = await pool.query(

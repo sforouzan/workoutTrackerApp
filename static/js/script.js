@@ -43,8 +43,6 @@ if (form) {
       });
     }
 
-    console.log(formattedData);
-
     const response = await fetch("/api/workout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -55,7 +53,6 @@ if (form) {
     form.style.display = "none";
     // if successful, show confirmation message
     if (response.ok) {
-      console.log("Workout session saved with ID:", result.workoutSessionId);
       const confirmationMessage = document.getElementById(
         "confirmationMessage"
       );
@@ -119,7 +116,6 @@ if (addExerciseButton) {
     exerciseField
       .querySelector(".deleteExercise")
       .addEventListener("click", () => {
-        console.log("deleting exercise");
         exerciseFields.removeChild(exerciseField); // Remove the specific exercise
         exerciseFieldCounter--;
       });
@@ -128,7 +124,6 @@ if (addExerciseButton) {
 // Delete workout entry
 // This function will be called when the delete button in the modal is clicked
 async function deleteWorkout(workoutId) {
-  console.log("workout Id", workoutId);
   try {
     const response = await fetch(`/workout/${workoutId}`, {
       method: "DELETE",

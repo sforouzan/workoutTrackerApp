@@ -3,8 +3,6 @@ const pool = require("../config/db_config.js");
 module.exports = async (req, res) => {
   const { date, workout_name, notes, exercises } = req.body;
 
-  console.log("req.body", req.body);
-
   try {
     // Start transaction
     const client = await pool.connect();
@@ -23,8 +21,6 @@ module.exports = async (req, res) => {
       }
 
       const workoutSessionId = workoutResult.rows[0].id;
-      console.log("workoutSessionId:", workoutSessionId);
-
       // Insert exercises if provided
       if (exercises && Array.isArray(exercises) && exercises.length > 0) {
         const exerciseQueries = exercises.map(
