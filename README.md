@@ -75,6 +75,12 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 
    _it will return 1 if the connection is successful_
 
+   If you receive an error in your terminal saying something like `command not found: psql`. This error typically means that the psql command-line tool isn't in your system's PATH after installing PostgreSQL.
+
+   You'll want to find the instructions for your specific `OS` and `shell` on how to add the psql PATH to the config.
+
+   [How to Fix "psql Command Not Found" Error in PostgreSQL](https://www.w3resource.com/PostgreSQL/snippets/psql-command-not-found.php#google_vignette)
+
 ### 2. Configure the Database Credentials
 
 Open `env.example` in a text editor and copy the contents inside the file.
@@ -100,6 +106,7 @@ If your PostgreSQL setup uses a different user or port, adjust them accordingly.
     ----------------------
     (0 rows)
 
+    psql:db/setup.sql:4: NOTICE:  database "workouttrackerapp" does not exist, skipping
     DROP DATABASE
     CREATE DATABASE
     You are now connected to database "workouttrackerapp" as user "postgres".
@@ -138,6 +145,8 @@ http://localhost:8080
   ```javascript
   app.listen(8080);
   ```
+
+- **Clearing the database**: If you would like to completely clear the database and start fresh, simply re-run the database script `psql -U postgres -f db/setup.sql`.
 
 ---
 
