@@ -34,7 +34,7 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 ├── views/              # EJS templates
 │   ├── partials/       # Separated EJS components for reusability
 │   └── pages/          # EJS pages rendered via the Express server
-├── env.example         # Example .env file for user to create
+├── env.example         # Example .env file to copy for actual .env file
 ├── package.json        # Node.js dependencies
 ├── README.md           # This file
 └── server.js           # Express server setup
