@@ -15,9 +15,9 @@ const deleteWorkoutRoute = require("./routes/deleteWorkout");
 
 app.get("/", indexRoute);
 app.get("/about", aboutRoute);
-app.post("/api/workout", apiRoute);
+app.post("/api/workout", apiRoute); //get data to show on log
 app.get("/workout-log", workoutLogRoute);
-app.delete("/workout/:id", deleteWorkoutRoute);
+app.delete("/workout/:id", deleteWorkoutRoute); //delete data from log
 
 // Start the server
 app.listen(8080, () => {

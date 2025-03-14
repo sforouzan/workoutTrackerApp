@@ -83,7 +83,7 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 
 ### 2. Configure the Database Credentials
 
-Open `env.example` in a text editor and copy the contents inside the file.
+Open `env.example` in VSCode and copy the contents inside the file.
 
 Then create a new file called `.env` at the project root (same directory as the `env.example`) and paste what you copied.
 
