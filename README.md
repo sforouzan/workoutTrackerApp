@@ -12,6 +12,19 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 
 ---
 
+## Tasks Completed
+
+### Shirin
+
+- Set up express server
+- Created file structure
+- Created SQL script for database + database config with env
+- Created client-side JS form functionality and workout log deletion
+- Created EJS components and set up page routing 
+
+
+---
+
 ## Prerequisites
 
 - **Node.js**: Install from [nodejs.org](https://nodejs.org/) (v14+ recommended).
