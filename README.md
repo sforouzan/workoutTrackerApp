@@ -22,6 +22,9 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 - Created client-side JS form functionality and workout log deletion
 - Created EJS components and set up page routing 
 
+### Parker
+
+- Footer Improvements - Added Links
 
 ---
 
