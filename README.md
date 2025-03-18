@@ -25,6 +25,7 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 ### Parker
 
 - Footer Improvements - Added Links
+- Rest Timer 
 
 ---
 

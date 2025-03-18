@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head', {metaTitle: 'Rest Timer' }); %>
+  <link rel="stylesheet" href="/css/timer.css">
+</head>
+
+<body>
+
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+
+  <main id="restTimerPage">
+    <div class="container">
+      <h1 class="text-center">Rest Timer</h1>
+      <div class="timer-wrapper d-flex flex-column align-items-center">
+        <div id="timerDisplay">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div id="timerControls">
+          <button id="startTimer" class="btn btn-primary">Start</button>
+          <button id="pauseTimer" class="btn btn-secondary">Pause</button>
+          <button id="resetTimer" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('../partials/footer'); %>
+
+  <script src="/js/timer.js"></script>
+</body>
+
+</html>
