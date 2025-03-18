@@ -1,10 +1,22 @@
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-  <div class="container-fluid">
-    <span class="mb-3 mb-md-0 text-body-secondary">©
-      <script>
-        document.write(new Date().getFullYear())
-      </script> Company, Inc
-    </span>
+<footer class="bg-light text-center py-3 mt-4">
+  <div class="container">
+      <nav class="d-flex justify-content-center">
+          <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link px-2 text-muted" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link px-2 text-muted" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link px-2 text-muted" href="/workout-log">Workout Log</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link px-2 text-muted" href="https://github.com/sforouzan/workoutTrackerApp" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+          </ul>
+      </nav>
+      <p class="text-muted mt-2">© <%= new Date().getFullYear() %> Workout Tracker App</p>
   </div>
 </footer>
 <%- include('./scripts'); %>
