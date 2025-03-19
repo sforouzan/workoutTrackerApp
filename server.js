@@ -12,6 +12,8 @@ const aboutRoute = require("./routes/about");
 const apiRoute = require("./routes/api");
 const workoutLogRoute = require("./routes/workout-log");
 const deleteWorkoutRoute = require("./routes/deleteWorkout");
+const timerRoute = require("./routes/timer");
+app.get("/timer", timerRoute);
 
 app.get("/", indexRoute);
 app.get("/about", aboutRoute);
