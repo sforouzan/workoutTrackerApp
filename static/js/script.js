@@ -39,6 +39,7 @@ if (form) {
         sets: parseInt(data[`sets${i}`], 10) || 0,
         reps: parseInt(data[`reps${i}`], 10) || 0,
         weight: parseInt(data[`weight${i}`], 10) || 0,
+        weight_unit: data[`weight_unit${i}`] || null, 
         distance: parseInt(data[`distance${i}`], 10) || 0,
       });
     }
@@ -96,7 +97,14 @@ if (addExerciseButton) {
     </div>
     <div class="exerciseField--inputs-group">
     <label for="weight${exerciseFieldCounter}">Weight:</label>
+    <div class="weight-container">
     <input type="number" name="weight${exerciseFieldCounter}">
+    <select name="weight_unit${exerciseFieldCounter}">
+    <option value="Select Unit">Select Unit</option>
+    <option value="kg">kg</option>
+    <option value="lb">lb</option>
+    </select>
+    </div>
     </div>
     <div class="exerciseField--inputs-group">
     <label for="distance${exerciseFieldCounter}">Distance:</label>

@@ -65,7 +65,7 @@
                               <%= exercise.reps> 0 ? exercise.reps : "-" %>
                             </td>
                             <td>
-                              <%= exercise.weight> 0 ? exercise.weight + " lbs." : "-" %>
+                              <%= exercise.weight > 0 ? exercise.weight + (exercise.weight_unit || "") : "-" %>
                             </td>
                             <td>
                               <%= exercise.distance> 0 ? exercise.distance + " km." : "-" %>
@@ -93,7 +93,7 @@
                               </p>
                               <p>
                                 Weight:
-                                <%= exercise.weight> 0 ? exercise.weight + " lbs." : "-" %>
+                                <%= exercise.weight > 0 ? exercise.weight + (exercise.weight_unit || "") : "-" %>
                               </p>
                               <p>
                                 Distance:

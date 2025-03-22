@@ -15,6 +15,7 @@ const deleteWorkoutRoute = require("./routes/deleteWorkout");
 const timerRoute = require("./routes/timer");
 app.get("/timer", timerRoute);
 
+
 app.get("/", indexRoute);
 app.get("/about", aboutRoute);
 app.post("/api/workout", apiRoute); //get data to show on log

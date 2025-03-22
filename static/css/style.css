@@ -202,3 +202,21 @@ main {
   transform: scale(1.1); 
   text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.2); 
 }
+
+.exerciseField--inputs-group {
+  margin-bottom: 10px;
+}
+
+.weight-container {
+  display: flex;
+  align-items: right;
+}
+
+.weight-container input {
+  width: 90px; /* Adjust width of the input field */
+  margin-right: 10px; /* Space between input and select */
+}
+
+.weight-container select {
+  width: 60px; /* Adjust width of the select dropdown */
+}
