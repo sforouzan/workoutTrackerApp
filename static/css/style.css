@@ -142,3 +142,23 @@ main {
   background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
   border-radius: 5px;
 }
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: underline; /* Optional underline effect */
+  font-size: 20px;
+}
+
+/* Change background on hover */
+.navbar-nav .nav-item:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+  border-radius: 5px;
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue */
+  border-color: #004085;
+  transform: scale(1.05); /* Slight enlargement */
+  transition: all 0.3s ease-in-out;
+}
