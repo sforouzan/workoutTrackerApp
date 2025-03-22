@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  #restTimerPage h1{
+    color: #007bff;
+  }
   
   #timerDisplay {
     font-size: 3em;
