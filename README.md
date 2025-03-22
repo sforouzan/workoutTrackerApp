@@ -32,6 +32,7 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
    - added hover effects to all buttons
  - css to home, about, rest timer page
    - changed the font color of the headers/titles of each page
+ - adding a dropdown menu in the exercise form asking the user to input the unit of weight they lifted
 
 ---
 
