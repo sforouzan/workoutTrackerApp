@@ -100,7 +100,7 @@ if (addExerciseButton) {
     <div class="weight-container">
     <input type="number" name="weight${exerciseFieldCounter}">
     <select name="weight_unit${exerciseFieldCounter}">
-    <option value="Select Unit">Select Unit</option>
+    <option value="">Select Unit</option>
     <option value="kg">kg</option>
     <option value="lb">lb</option>
     </select>

@@ -209,12 +209,12 @@ main {
 
 .weight-container {
   display: flex;
-  align-items: right;
+  flex-direction: row;
 }
 
 .weight-container input {
   width: 90px; /* Adjust width of the input field */
-  margin-right: 10px; /* Space between input and select */
+  margin-right: 5px; /* Space between input and select */
 }
 
 .weight-container select {
