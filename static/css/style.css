@@ -190,3 +190,9 @@ main {
   font-weight: bold; /* Make it stand out */
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.navbar-brand:hover {
+  color: #007bff; /* Bootstrap primary blue */
+  transform: scale(1.1); /* Slight enlargement */
+  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.2); /* Subtle glow effect */
+}
