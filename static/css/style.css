@@ -127,6 +127,10 @@ main {
   border-radius: 3px;
 }
 
+#about h1 {
+  font-weight: bold;
+}
+
 .navbar-nav .nav-link:hover {
   color: #007bff; /* Bootstrap primary color */
   text-decoration: underline; /* Optional underline effect */
