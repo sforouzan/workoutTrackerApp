@@ -124,4 +124,5 @@ main {
 #about {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-radius: 3px;
 }
