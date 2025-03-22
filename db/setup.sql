@@ -26,5 +26,7 @@ CREATE TABLE exercises (
     sets INTEGER,
     reps INTEGER,
     weight INTEGER,
+    weight_unit VARCHAR(10),
     distance FLOAT
 );
+

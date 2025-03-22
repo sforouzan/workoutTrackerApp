@@ -24,10 +24,10 @@ module.exports = async (req, res) => {
       // Insert exercises if provided
       if (exercises && Array.isArray(exercises) && exercises.length > 0) {
         const exerciseQueries = exercises.map(
-          ({ exercise_name, sets, reps, weight, distance }) =>
+          ({ exercise_name, sets, reps, weight, weight_unit, distance }) =>
             client.query(
-              "INSERT INTO exercises (workout_session_id, exercise_name, sets, reps, weight, distance) VALUES ($1, $2, $3, $4, $5, $6)",
-              [workoutSessionId, exercise_name, sets, reps, weight, distance]
+              "INSERT INTO exercises (workout_session_id, exercise_name, sets, reps, weight, weight_unit, distance) VALUES ($1, $2, $3, $4, $5, $6, $7)",
+              [workoutSessionId, exercise_name, sets, reps, weight, weight_unit, distance]
             )
         );
         await Promise.all(exerciseQueries);

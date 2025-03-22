@@ -16,6 +16,7 @@ main {
 #homepage h1 {
   text-align: center;
   padding-bottom: 1rem;
+  color: #007bff;
 }
 
 #homepage .success,
@@ -104,6 +105,7 @@ main {
 #workoutLog h1 {
   text-align: center;
   padding-bottom: 1rem;
+  color: #007bff;
 }
 
 #workoutLog .mainList {
@@ -124,4 +126,97 @@ main {
 #about {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-radius: 3px;
+}
+
+#about h1 {
+  font-weight: bold;
+  color:#007bff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; 
+  text-decoration: underline; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; 
+  text-decoration: underline; 
+}
+
+/* Change background on hover */
+.navbar-nav .nav-item:hover {
+  background-color: rgba(0, 123, 255, 0.1); 
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; 
+  text-decoration: underline; 
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+/* Change background on hover */
+.navbar-nav .nav-item:hover {
+  background-color: rgba(0, 123, 255, 0.1); 
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+  background-color: #0056b3; 
+  border-color: #004085;
+  transform: scale(1.05); 
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 123, 255, 0.2); 
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Mobile menu links hover effect */
+@media (max-width: 991px) { 
+  .navbar-nav .nav-link {
+      padding: 10px;
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover {
+      background-color: rgba(0, 123, 255, 0.1); 
+      color: #007bff;
+      border-radius: 5px;
+  }
+}
+
+/* Navbar brand (logo) hover effect */
+.navbar-brand {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #007bff; 
+  transform: scale(1.1); 
+  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.2); 
+}
+
+.exerciseField--inputs-group {
+  margin-bottom: 10px;
+}
+
+.weight-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.weight-container input {
+  width: 90px; /* Adjust width of the input field */
+  margin-right: 5px; /* Space between input and select */
+}
+
+.weight-container select {
+  width: 60px; /* Adjust width of the select dropdown */
 }
