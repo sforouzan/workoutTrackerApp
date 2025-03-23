@@ -9,6 +9,8 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 - **Add a new workout entry**
 - **View all entries**
 - **Delete entries**
+- **Rest Timer**
+- **Exercise Suggestions**: Provides a list of common exercises as suggestions when adding a workout entry.
 
 ---
 
@@ -25,7 +27,9 @@ A simple web application to log exercises, built with **Express**, **EJS**, and 
 ### Parker
 
 - Footer Improvements - Added Links
-- Rest Timer 
+- Rest Timer  
+- Exercise Suggestions
+
 
 ### Callista 
  - css improvements to nav bar

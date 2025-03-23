@@ -85,7 +85,9 @@ if (addExerciseButton) {
     <div class="exerciseField--inputs">
     <div class="exerciseField--inputs-group">
     <label for="exercise${exerciseFieldCounter}">Exercise:</label>
-    <input type="text" name="exercise${exerciseFieldCounter}" required>
+    <input type="text" name="exercise${exerciseFieldCounter}" list="exerciseList" required>
+    <datalist id="exerciseList">
+    </datalist>
     </div>
     <div class="exerciseField--inputs-group">
     <label for="sets${exerciseFieldCounter}">Sets:</label>
@@ -117,6 +119,13 @@ if (addExerciseButton) {
 
     exerciseFields.appendChild(exerciseField);
     exerciseFieldCounter++;
+    
+    const datalist = exerciseField.querySelector('#exerciseList');
+    exerciseSuggestions.forEach(exercise => {
+    const option = document.createElement('option');
+    option.value = exercise;
+    datalist.appendChild(option);
+});
 
     HtmlDurationPicker.init();
 
