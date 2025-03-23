@@ -1,4 +1,3 @@
-// static/js/timer.js
 document.addEventListener('DOMContentLoaded', () => {
     let timerInterval;
     let startTime;
